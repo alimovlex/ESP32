@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <time.h>
-
-const char* ssid       = "ASUS_5C";
-const char* password   = "user443wifi";
+#include "sandbox.hpp"
+const char* ssid       = "domru179";
+const char* password   = "11223344";
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 7200;
@@ -49,3 +49,27 @@ void wifi()
   WiFi.disconnect(true);
   WiFi.mode(WIFI_OFF);	
 }	
+
+void TaskBlink(void *pvParameters)  // This is a task.
+{
+  (void) pvParameters;
+
+/*
+  Blink
+  Turns on an LED on for one second, then off for one second, repeatedly.
+    
+  If you want to know what pin the on-board LED is connected to on your ESP32 model, check
+  the Technical Specs of your board.
+*/
+
+  // initialize digital LED_BUILTIN on pin 13 as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  for (;;) // A Task shall never return or exit.
+  {
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    vTaskDelay(100);  // one tick delay (15ms) in between reads for stability
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    vTaskDelay(100);  // one tick delay (15ms) in between reads for stability
+  }
+}
