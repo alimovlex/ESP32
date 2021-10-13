@@ -1,8 +1,0 @@
-flash.sh
-loadable_elf_example_test.py
-main/main.c
-sdkconfig.ci
-sdkconfig
-Makefile
-main/component.mk
-main/CMakeLists.txt
