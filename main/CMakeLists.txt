@@ -2,9 +2,9 @@
 
 set(SOURCES
         "main.cpp"
-        "systeminfo.cpp"
-        "gpio.cpp"
-        "nvs32.cpp"
+        "../source/systeminfo.cpp"
+        "../source/gpio.cpp"
+        "../source/nvs32.cpp"
         )
 
 
