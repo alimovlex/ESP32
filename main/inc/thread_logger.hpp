@@ -1,3 +1,10 @@
+/*
+    thread_logger.hpp
+    ESP32
+    Created by alimovlex.
+    Copyright (c) 2023 alimovlex. All rights reserved.
+*/
+
 void print_thread_info(const char *extra = nullptr);
 void thread_func_inherited();
 void spawn_another_thread();

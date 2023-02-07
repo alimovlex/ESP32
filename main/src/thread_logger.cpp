@@ -1,3 +1,10 @@
+/*
+    thread_logger.cpp
+    ESP32
+    Created by alimovlex.
+    Copyright (c) 2023 alimovlex. All rights reserved.
+*/
+
 #include <iostream>
 #include <thread>
 #include <chrono>
