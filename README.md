@@ -1,4 +1,4 @@
-# C++ pthread Example [![Lines of code](https://tokei.rs/b1/github/alimovlex/ESP32?category=code)](https://github.com/alimovlex/ESP32)
+# C++ pthread Example
 
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
