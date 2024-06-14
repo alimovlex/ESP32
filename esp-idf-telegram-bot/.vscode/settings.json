@@ -1,0 +1,10 @@
+{
+    "idf.port": "/dev/ttyUSB0",
+    "idf.flashType": "UART",
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "network_handler.h": "c",
+        "stdlib.h": "c",
+        "api_constants.h": "c"
+    }
+}
